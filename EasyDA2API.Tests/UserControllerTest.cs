@@ -23,7 +23,7 @@ namespace EasyDA2API.Tests
                     Name = "Juan",
                     Age = 37,
                     Pass = "213213123"
-                } 
+                }
             };
             var expectedMappedResult = expected.Select(u => new UserResponse(u)).ToList();
             Mock<IUserLogic> logic = new Mock<IUserLogic>(MockBehavior.Strict);
@@ -41,6 +41,42 @@ namespace EasyDA2API.Tests
             Assert.AreEqual(resultObject.StatusCode, expectedObjectResult.StatusCode);
             // Improve this
             Assert.AreEqual(resultValue.First().Name, expectedMappedResult.First().Name);
+        }
+
+        [TestMethod]
+        public void CreateUserTest()
+        {
+            //Arrage  
+            UserRequest received = new UserRequest()
+            {
+                Name = "Juan",
+                Age = 37,
+                Pass = "213213123"
+            };
+            User expected = new User()
+            {
+                Id = Guid.NewGuid(),
+                Name = "Juan",
+                Age = 37,
+                Pass = "213213123"
+
+            };
+            var expectedMappedResult = new UserResponse(expected);
+            Mock<IUserLogic> logic = new Mock<IUserLogic>(MockBehavior.Strict);
+            logic.Setup(logic => logic.CreateUser(It.IsAny<User>())).Returns(expected);
+            var userController = new UserController(logic.Object);
+            var expectedObjectResult = new CreatedAtActionResult("CreateUser", "CreateUser", new { id = 5 }, expectedMappedResult);
+
+            // Act
+            var result = userController.CreateUser(received);
+
+            // Assert
+            logic.VerifyAll();
+            CreatedAtActionResult resultObject = result as CreatedAtActionResult;
+            UserResponse resultValue = resultObject.Value as UserResponse;
+            Assert.AreEqual(resultObject.StatusCode, expectedObjectResult.StatusCode);
+            // Improve this
+            Assert.AreEqual(resultValue.Name, expectedMappedResult.Name);
         }
     }
 }

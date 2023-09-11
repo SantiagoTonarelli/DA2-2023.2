@@ -15,6 +15,16 @@ namespace EasyDA2API.Controllers
             this._userLogic = userLogic;
         }
 
+        [HttpPost]
+        public IActionResult CreateUser([FromBody] UserRequest received)
+        {
+            var user = received.ToEntity();
+            var resultLogic = _userLogic.CreateUser(user);
+            var result = new UserResponse(resultLogic);
+
+            return CreatedAtAction(nameof(CreateUser), new { id = result.Id }, result);
+        }
+
         [HttpGet]
         public IActionResult GetAllUsers()
         {
