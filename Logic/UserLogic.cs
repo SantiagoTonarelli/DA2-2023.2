@@ -1,6 +1,7 @@
 ﻿using DataAcces.Interfaces;
 using Domain;
 using Logic.Interfaces;
+using System.Xml.Linq;
 
 namespace Logic
 {
@@ -13,7 +14,12 @@ namespace Logic
 
         public User CreateUser(User user)
         {
-            throw new NotImplementedException();
+            user.SelfValidation();
+            if (this._userRepository.Exist(GetUsersByName(user.Name)))
+            {
+                throw new InvalidOperationException("User already exist");
+            }
+            return this._userRepository.CreateUser(user);
         }
 
         public IEnumerable<User> GetAllUsers(string nameOrEmpty)
@@ -23,7 +29,7 @@ namespace Logic
 
         private Func<User,bool> GetUsersByName(string name)
         {
-            return (User u) => u.Name == name;
+            return (User u) => name == "" || u.Name == name;
         }
     }
 }
