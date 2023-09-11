@@ -27,12 +27,12 @@ namespace EasyDA2API.Tests
             };
             var expectedMappedResult = expected.Select(u => new UserResponse(u)).ToList();
             Mock<IUserLogic> logic = new Mock<IUserLogic>(MockBehavior.Strict);
-            logic.Setup(logic => logic.GetAllUsers()).Returns(expected);
+            logic.Setup(logic => logic.GetAllUsers(It.IsAny<string>())).Returns(expected);
             var userController = new UserController(logic.Object);
             OkObjectResult expectedObjectResult = new OkObjectResult(expectedMappedResult);
 
             // Act
-            var result = userController.GetAllUsers();
+            var result = userController.GetAllUsers("");
 
             // Assert
             logic.VerifyAll();

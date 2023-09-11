@@ -26,9 +26,10 @@ namespace EasyDA2API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAllUsers()
+        public IActionResult GetAllUsers([FromQuery] string? name)
         {
-            return Ok(_userLogic.GetAllUsers().Select(u => new UserResponse(u)).ToList());
+            string nameOrEmpty = name == null ? "" : name;
+            return Ok(_userLogic.GetAllUsers(nameOrEmpty).Select(u => new UserResponse(u)).ToList());
         }
     }
 }

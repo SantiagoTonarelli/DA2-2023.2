@@ -1,8 +1,3 @@
-C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\obj\Debug\net6.0\EasyDA2API.Tests.csproj.AssemblyReference.cache
-C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\obj\Debug\net6.0\EasyDA2API.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\obj\Debug\net6.0\EasyDA2API.Tests.AssemblyInfoInputs.cache
-C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\obj\Debug\net6.0\EasyDA2API.Tests.AssemblyInfo.cs
-C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\obj\Debug\net6.0\EasyDA2API.Tests.csproj.CoreCompileInputs.cache
 C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\bin\Debug\net6.0\CoverletSourceRootsMapping
 C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\bin\Debug\net6.0\testhost.dll
 C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\bin\Debug\net6.0\EasyDA2API.deps.json
@@ -113,6 +108,11 @@ C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\bin\Debug\
 C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\bin\Debug\net6.0\EasyDA2API.pdb
 C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\bin\Debug\net6.0\Logic.Interfaces.pdb
 C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\obj\Debug\net6.0\EasyDA2API.Tests.csproj.AssemblyReference.cache
+C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\obj\Debug\net6.0\EasyDA2API.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\obj\Debug\net6.0\EasyDA2API.Tests.AssemblyInfoInputs.cache
+C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\obj\Debug\net6.0\EasyDA2API.Tests.AssemblyInfo.cs
+C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\obj\Debug\net6.0\EasyDA2API.Tests.csproj.CoreCompileInputs.cache
 C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\obj\Debug\net6.0\EasyDA2API.Tests.csproj.CopyComplete
 C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\obj\Debug\net6.0\EasyDA2API.Tests.dll
 C:\Users\santi\OneDrive\Desktop\DA2\Ejemplos\EasyDA2\EasyDA2API.Tests\obj\Debug\net6.0\refint\EasyDA2API.Tests.dll
